@@ -13,7 +13,7 @@ namespace TodoAssignment.Models
         private string? firstName;
         private string? lastName;
 
-        public Person(int personId, string? firstName, string? lastName)
+        public Person(string? firstName, string? lastName, int personId)
         {
             this.personId = personId;
             FirstName = firstName;

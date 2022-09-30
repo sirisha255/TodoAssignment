@@ -8,12 +8,12 @@ namespace TodoAssignment
         static void Main(string[] args)
         {
             {
-                //Create a instance of the class
-                Person person = new Person(0, "Rosita", "Axelsson");
+               
+              //  Person person = new Person("siri",+,"Tad",+ 0);
                 //Prints the person
-                Console.WriteLine(person.PersonId + " " + person.FirstName + " " + person.LastName);
-                PersonSequencer personSequencer = new PersonSequencer();
-                PeopleService peopleService = new PeopleService();
+              //  Console.WriteLine(person.PersonId + " " + person.FirstName + " " + person.LastName);
+              //  PersonSequencer personSequencer = new PersonSequencer();
+              //  PeopleService peopleService = new PeopleService();
 
                 //Console.WriteLine(peopleService.CreateNewPerson());
             }

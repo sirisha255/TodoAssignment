@@ -50,7 +50,7 @@ namespace TodoAssignment.Data
     public Person CreateNewPerson(string firstName, string lastName)
     {
         
-        Person newPerson = new Person(PersonSequencer.NextPersonId(), firstName, lastName);
+        Person newPerson = new Person(firstName, lastName, PersonSequencer.NextPersonId());
         Array.Resize<Person>(ref personArray, personArray.Length + 1);
         personArray[personArray.Length - 1] = newPerson;
         return newPerson;
