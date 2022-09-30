@@ -14,7 +14,7 @@ namespace TodoAssignment.Models
         private bool done;
         private Person assignee;
 
-        public Todo(int todoId, string? description)
+        public Todo(string? description, int todoId)
         {
             this.todoId = todoId;
             Description = description;

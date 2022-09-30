@@ -47,7 +47,7 @@ namespace TodoAssignment.Data
 
         public Todo CreateNewTodo(string description)
         {
-            Todo newTodo = new Todo(TodoSequencer.NextTodoId(), description);
+            Todo newTodo = new Todo(description, TodoSequencer.NextTodoId());
             Array.Resize<Todo>(ref todoArray, todoArray.Length + 1);
             todoArray[todoArray.Length - 1] = newTodo;
             return newTodo;
